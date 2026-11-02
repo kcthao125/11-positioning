@@ -1,0 +1,57 @@
+html{
+    background-color: rgb(242, 229, 115);
+}
+
+.site-nav{
+    background-color: rgb(150, 255, 150);
+}
+
+.site-links{
+    display:flex;
+    list-style-type: none;
+    padding:0;
+}
+
+.site-link{
+    display: block;
+    padding:10px;
+    color:white;
+    text-decoration: none;
+}
+
+.site-link:hover{
+    background-color: purple;
+}
+
+.dropdown{
+    background-color: white;
+    position:absolute;
+    box-shadow: 2px 2px 8x 0 rgba(0, 0, 0, 0.5);
+    list-style-type: none;
+    padding:0;
+    display:none;
+}
+
+.dropdown-link{
+    color: black;
+    text-decoration: none;
+    display:block;
+    padding:8px 16px;
+}
+
+.dropdown-link:hover{
+    background-color: grey;
+}
+
+.has-dropdown:hover.dropdown{
+    display:block;
+}
+
+.footer-nav{
+    background-color: black;
+    color:white;
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+}
