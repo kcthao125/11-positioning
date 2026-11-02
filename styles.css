@@ -2,31 +2,45 @@ html{
     background-color: rgb(242, 229, 115);
 }
 
+.wrapper{
+    max-width: 700px;
+    margin:0 auto;
+}
+
+code{
+    color:purple;
+    background-color:pink;
+}
+
 .site-nav{
     background-color: rgb(150, 255, 150);
+    margin:0px;
 }
 
 .site-links{
     display:flex;
     list-style-type: none;
     padding:0;
+    justify-content: center;
+    gap:150px;
+
 }
 
 .site-link{
     display: block;
     padding:10px;
-    color:white;
+    color:black;
     text-decoration: none;
 }
 
 .site-link:hover{
-    background-color: purple;
+    background-color: rgb(107, 182, 107);
 }
 
 .dropdown{
     background-color: white;
     position:absolute;
-    box-shadow: 2px 2px 8x 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 8x 0px rgba(0, 0, 0, 0.5);
     list-style-type: none;
     padding:0;
     display:none;
@@ -40,10 +54,10 @@ html{
 }
 
 .dropdown-link:hover{
-    background-color: grey;
+    background-color: rgb(204, 204, 204);
 }
 
-.has-dropdown:hover.dropdown{
+.has-dropdown:hover .dropdown{ /*need to add a space before the "." in order for it to work. 2 classes in 1 css orientation*/
     display:block;
 }
 
